@@ -21,7 +21,7 @@
 		$_SESSION['login_info[user]'] =  $rows['user_seq'];
 		$_SESSION['login_info[login_name]'] =  $rows['user_seq'];
 		$_SESSION['login_info[autho]'] = $rows['autho_seq'];
-		header("Location: ../index.php");
+		header("Location: top.php");
 	}
 	else
 	{
