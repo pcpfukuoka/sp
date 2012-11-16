@@ -22,13 +22,32 @@
 	Dbdissconnect($dbcon);
 ?>
 
-<html>
+<html lang="ja">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="viewport" content="width=device-width, intital-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		
 		<title>送信ボックス</title>
 	</head>
 	
 	<body>
+	<div data-role="page" id="OutBox" align="center">
+			<div data-role="header" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="" class="ui-btn-active">スケジュール</a></li>
+						<li><a href="">連絡帳</a></li>
+						<li><a href="">授業</a></li>
+						<li><a href="">成績確認</a></li>
+						<li><a href="">アンケート</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div data-role="content">
 		<div align="center">
 			<font size="7">送信ボックス</font><br><br>
 		</div>
@@ -66,5 +85,10 @@
 				?>		
 			</table>
 		</div>
+		</div>
+	    	
+	    	<div data-role="footer" data-position="fixed">
+				<p>PCP2012</p>
+			</div>
 	</body>
 </html>
