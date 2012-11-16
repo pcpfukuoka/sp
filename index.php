@@ -14,8 +14,8 @@
 			<div data-role="header" data-position="fixed">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="" class="ui-btn-active">スケジュール</a></li>
-						<li><a href="">連絡帳</a></li>
+						<li><a href="">スケジュール</a></li>
+						<li><a href="#contactbook">連絡帳</a></li>
 						<li><a href="">授業</a></li>
 						<li><a href="">成績確認</a></li>
 						<li><a href="">アンケート</a></li>
@@ -30,6 +30,5 @@
 				<p>PCP2012</p>
 			</div>
 		</div>
-	</body>
-
+	</body>	
 </html>
