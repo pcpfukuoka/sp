@@ -32,8 +32,8 @@
 			<div data-role="header" data-position="fixed">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="" class="ui-btn-active">スケジュール</a></li>
-						<li><a href="">連絡帳</a></li>
+						<li><a href="">スケジュール</a></li>
+						<li><a href="" class="ui-btn-active">連絡帳</a></li>
 						<li><a href="">授業</a></li>
 						<li><a href="">成績確認</a></li>
 						<li><a href="">アンケート</a></li>
@@ -76,8 +76,9 @@
 	    </form> 
 	    	</div>
 	    	
-	    	<div data-role="footer" data-position="fixed">
+	    	<div data-role="footer" data-position="fixed" >
 				<p>PCP2012</p>
+				<a href="#contactbook" data-transition="slide" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
 			</div>
     </body>  
 </html>    
