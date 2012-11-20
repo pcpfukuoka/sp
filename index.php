@@ -3,10 +3,6 @@
 	<head>
 	
 		<?php
-			if(!isset($_SESSION["login_flg"]) || $_SESSION['login_flg'] == "false")
-			{
-				header("Location:login/index.php");
-			}
 		?>
 		<meta charset="UTF-8">
 		<title>PCP2012</title>

@@ -2,7 +2,6 @@
 	session_start();
 	if(isset($_SESSION["login_flg"]) && $_SESSION['login_flg'] == "true")
 	{
-		header("Location:../index.php");
 	}
 ?>
 
