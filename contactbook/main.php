@@ -32,14 +32,12 @@
 			<div data-role="content">
 				<div align="center">
 					<font size = "7">連絡帳</font><br><br>
-				</div>
-		
-				<hr color="blue">
-				<br><br><br>
-		
-				<p align="center">
+
+					<hr color="blue">
+					<br><br><br>
+
 					<?php
-					
+
 						//データベースの呼出
 						require_once("../lib/dbconect.php");
 						$dbcon = DbConnect();
@@ -77,7 +75,7 @@
 						Dbdissconnect($dbcon);
 						
 					?>
-		
+			
 					<!-- それぞれのリンク先に移動 -->
 					<form action="relay.php" method="POST">
 						<input type="submit" name="CreateNew" value="新規作成">
@@ -88,7 +86,7 @@
 						<br><br>
 						<input type="submit" name="Draft" value="下書き （<?= $cnt_send?>）">
 					</form>
-				</p>
+				</div>
 			</div>
 
 			<div data-role="footer" data-position="fixed">
