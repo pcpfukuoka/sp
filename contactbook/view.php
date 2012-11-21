@@ -19,15 +19,34 @@
 	Dbdissconnect($dbcon);
 ?>
        
-<html>
+<html lang="ja">
 	<head>
 	　　<title> 確認画面</title>
 	  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	  <meta http-equiv="Content-Style-Type" content="text/css">
 	  <link rel="stylesheet" type="text/css" href="../css/button.css" />
+	  
+	  <meta name="viewport" content="width=device-width, intital-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 	</head>
 	
 	<body>
+	<div data-role="page" id="comp_dis" align="center"> 
+			<div data-role="header" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="">スケジュール</a></li>
+						<li><a href="" class="ui-btn-active">連絡帳</a></li>
+						<li><a href="">授業</a></li>
+						<li><a href="">成績確認</a></li>
+						<li><a href="">アンケート</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div data-role="content">
 		<form action="ReplyBox.php" method="POST">
 			<div align="center">
 			    <font size = "7">確認画面</font><br>
@@ -53,6 +72,14 @@
 		    <input type="hidden" value="<?= $id ?>" name="link_id">
 		    <input class="button4" type="submit" value="返信">
 	    </form>
+	    </div>
+	    	
+	    	<div data-role="footer" data-position="fixed">
+				<p>PCP2012</p>
+				
+				<a href="#contactbook" data-transition="slide" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
+			</div>
+	</div>
     </body>  
 </html>
         
