@@ -20,7 +20,7 @@
 	Dbdissconnect($dbcon);
 ?>
 
-<html lang="ja">
+<html lang="ja"> 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<meta name="viewport" content="width=device-width, intital-scale=1">
@@ -35,8 +35,8 @@
 			<div data-role="header" data-position="fixed">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="" class="ui-btn-active">スケジュール</a></li>
-						<li><a href="">連絡帳</a></li>
+						<li><a href="">スケジュール</a></li>
+						<li><a href="" class="ui-btn-active">連絡帳</a></li>
 						<li><a href="">授業</a></li>
 						<li><a href="">成績確認</a></li>
 						<li><a href="">アンケート</a></li>
@@ -140,6 +140,9 @@
 	    	
 	    	<div data-role="footer" data-position="fixed">
 				<p>PCP2012</p>
+				<a href="#" data-rel="back" data-role="button" data-icon="back"  class="ui-btn-left">戻る</a>
+				<a href="#contactbook" data-transition="slide" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
 			</div>
+	</div>
 	</body>
 </html>
