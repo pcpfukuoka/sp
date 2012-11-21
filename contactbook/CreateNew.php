@@ -51,7 +51,10 @@
 			  <br><br>
 			  
 			  <font size="3">宛先</font>
-			  <select name="to">
+			  
+			  
+			  <div data-role="fieldcontain">
+			  <select name="to"  data-native-menu="false">
 			  <?php
 				   for ($i = 0; $i < $kensu; $i++)
 				   {
@@ -63,6 +66,8 @@
 			  ?>
 			  	
 			  </select>
+			  </div>
+			  
 			  <br>
 			  <font size="3">件名</font>
 			  <input size="40" type="text" name="title"><br><br>
@@ -78,8 +83,9 @@
 	    	
 	    	<div data-role="footer" data-position="fixed" >
 				<p>PCP2012</p>
-				<a href="#" data-rel="back" data-role="button" data-icon="back" data-iconpos="notext" class="ui-btn-left">戻る</a>
+				<a href="#" data-rel="back" data-role="button" data-icon="back"  class="ui-btn-left">戻る</a>
 				<a href="#contactbook" data-transition="slide" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
 			</div>
+	</div>
     </body>  
 </html>    
