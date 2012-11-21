@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
+	
+		<?php
+		?>
 		<meta charset="UTF-8">
 		<title>PCP2012</title>
 		<meta name="viewport" content="width=device-width, intital-scale=1">
@@ -15,7 +18,7 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="">スケジュール</a></li>
-						<li><a href="#contactbook">連絡帳</a></li>
+						<li><a href="#contactbook/main.php">連絡帳</a></li>
 						<li><a href="">授業</a></li>
 						<li><a href="">成績確認</a></li>
 						<li><a href="">アンケート</a></li>

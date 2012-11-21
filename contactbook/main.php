@@ -82,7 +82,7 @@
 					<form action="relay.php" method="POST">
 						<input type="submit" name="CreateNew" value="新規作成">
 						<br><br>
-						<input type="submit" name="MAilBox" value="受信箱（<?= $cnt_new + $cnt_print_flg ?> ）">
+						<input type="submit" name="MAilBox" value="受信箱（<?= $cnt_new + $cnt_print_flg ?>）">
 						<br><br>
 						<input type="submit" name="OutBox" value="送信箱 ">
 						<br><br>

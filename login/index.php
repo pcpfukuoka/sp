@@ -2,7 +2,6 @@
 	session_start();
 	if(isset($_SESSION["login_flg"]) && $_SESSION['login_flg'] == "true")
 	{
-		header("Location:top.php");
 	}
 ?>
 
@@ -31,8 +30,20 @@
 					}
 				?>		
 				<form action="login.php" method="POST">
-					ID：<input type="text" name="id"><br>
-					パスワード：<input type="password" name="pass"><br>
+					<div data-role="fieldcontain">
+						<label for="id" id="id">ID:</label>
+						<input type="text" name="id">
+					</div>
+					
+					<br>
+					
+					<div data-role="fieldcontain">
+						<label for="pass" id="pass">パスワード：</label>
+						<input type="password" name="pass">
+					</div>
+					
+					<br>
+					
 					<input type="submit" value="ログイン"><br>
 				</form>
 			</div>
