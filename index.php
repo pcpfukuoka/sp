@@ -3,6 +3,7 @@
 	<head>
 	
 		<?php
+			session_start();
 			if(!isset($_SESSION["login_flg"]) || $_SESSION['login_flg'] == "false")
 			{
 				header("Location:login/index.php");
@@ -22,7 +23,7 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="">スケジュール</a></li>
-						<li><a href="#contactbook/main.php">連絡帳</a></li>
+						<li><a href="contactbook/main.php">連絡帳</a></li>
 						<li><a href="">授業</a></li>
 						<li><a href="">成績確認</a></li>
 						<li><a href="">アンケート</a></li>
