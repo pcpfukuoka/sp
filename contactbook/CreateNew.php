@@ -80,7 +80,7 @@
 			  <input class="button4" type="submit" value="保存" name="Preservation"><br>
 	    </form> 
 	    	</div>
-	    	
+	    	 
 	    	<div data-role="footer" data-position="fixed" >
 				<p>PCP2012</p>
 				<a href="#" data-rel="back" data-role="button" data-icon="back"  class="ui-btn-left">戻る</a>
