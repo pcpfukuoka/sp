@@ -33,7 +33,7 @@
 	</head>
 	
 	<body>
-	<div data-role="page" id="comp_dis" align="center">
+	<div data-role="page" id="comp_dis" align="center"> 
 			<div data-role="header" data-position="fixed">
 				<div data-role="navbar">
 					<ul>
