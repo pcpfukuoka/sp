@@ -19,7 +19,7 @@
 	</head>
 	<body>
 		<div data-role="page" id="login" align="center">
-			<div data-role="header">
+			<div data-role="header" data-position="fixed">
 				<p>ログイン画面</p>
 			</div>
 			
