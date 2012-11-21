@@ -1,14 +1,14 @@
 <html>
 	<head>
-	@<title> –¢Šm”F</title>
+		<title> ï¿½ï¿½ï¿½mï¿½F</title>
 	</head>
 	
 	<body>
 	  <div align="center">
-	    <font size = "7">–¢Šm”F</font><br>
+	    <font size = "7">ï¿½ï¿½ï¿½mï¿½F</font><br>
 	  </div>
 	  
-	  <a href=""><font size ="4">©–ß‚é</font></a>
+	  <a href=""><font size ="4">ï¿½ï¿½ï¿½ß‚ï¿½</font></a>
 	  <hr color="green">
 	  <br><br><br>
 	  
@@ -17,7 +17,7 @@
          mysql_connect("tamokuteki41","root","");
          mysql_select_db("pcp2012");
 
-         mysql_query("SET NAMES sjis"); //•¶š‰»‚¯‘Îô
+         mysql_query("SET NAMES sjis"); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îï¿½
 	  
 	     $sql = "select date, sender, subject FROM contact_book";
 	     $result = mysql_query($sql);
@@ -30,9 +30,9 @@
 	    
 	    <table border="1" >
 	      <tr bgcolor="yellow">
-	       <td><font size="5"></font>“ú•t</td>
+	       <td><font size="5"></font>ï¿½ï¿½t</td>
 	       <td><font size="5"></font>FROM</td>
-	       <td><font size="5"></font>Œ–¼</td>
+	       <td><font size="5"></font>ï¿½ï¿½ï¿½ï¿½</td>
 	      </tr>
 	      
 	        <?php
