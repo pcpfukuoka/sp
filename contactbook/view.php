@@ -21,19 +21,21 @@
        
 <html lang="ja">
 	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, intital-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 	　　<title> 確認画面</title>
 	  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	  <meta http-equiv="Content-Style-Type" content="text/css">
 	  <link rel="stylesheet" type="text/css" href="../css/button.css" />
 	  
-	  <meta name="viewport" content="width=device-width, intital-scale=1">
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	  
 	</head>
 	
 	<body>
-	<div data-role="page" id="comp_dis" align="center"> 
+	<div align="center"> 
 			<div data-role="header" data-position="fixed">
 				<div data-role="navbar">
 					<ul>
@@ -51,9 +53,7 @@
 			<div align="center">
 			    <font size = "7">確認画面</font><br>
 			</div>
-			<div>
-				<font size = "4"><a href="MailBox.php">←戻る</a></font>
-			</div>
+			
 		  
 			<hr color="blue">
 			<br><br>
@@ -70,14 +70,15 @@
 		    <input type="hidden" value="<?= $row['title'] ?>" name="title">
 		    <input type="hidden" value="<?= $row['contents'] ?>" name="contents">
 		    <input type="hidden" value="<?= $id ?>" name="link_id">
-		    <input class="button4" type="submit" value="返信">
+		    <input class="button4" type="submit" data-role="button" data-inline="true"  value="返信">
 	    </form>
 	    </div>
 	    	
 	    	<div data-role="footer" data-position="fixed">
 				<p>PCP2012</p>
 				
-				<a href="#contactbook" data-transition="slide" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
+				<a href="MailBox.php" data-role="button" data-icon="back" class="ui-btn-left">戻る</a>
+				<a href="../index.php" data-transition="slide" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
 			</div>
 	</div>
     </body>  
