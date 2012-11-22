@@ -28,7 +28,7 @@
 	</head>
 	
 	<body>
-	<div data-role="page" id="CreateNew" align="center">
+	<div align="center">
 			<div data-role="header" data-position="fixed">
 				<div data-role="navbar">
 					<ul>
@@ -76,8 +76,8 @@
 		      
 		      <!--隠し文字-->
 		      <input type="hidden" value="0" name="link_id">
-		      <input class="button4" type="submit" value="送信" name = "send">
-			  <input class="button4" type="submit" value="保存" name="Preservation"><br>
+		      <input class="button4" type="submit" data-role="button" data-inline="true" value="送信" name = "send">
+			  <input class="button4" type="submit" data-role="button" data-inline="true" value="保存" name="Preservation"><br>
 	    </form> 
 	    	</div>
 	    	 
