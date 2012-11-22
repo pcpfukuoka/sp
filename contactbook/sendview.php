@@ -20,17 +20,36 @@
        
 <html>
 	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, intital-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 	　　<title> 確認画面</title>
 	  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	</head>
 	
 	<body>
+	<div align="center"> 
+			<div data-role="header" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="">スケジュール</a></li>
+						<li><a href="" class="ui-btn-active">連絡帳</a></li>
+						<li><a href="">授業</a></li>
+						<li><a href="">成績確認</a></li>
+						<li><a href="">アンケート</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div data-role="content">
 		<form action="ReplyBox.php" method="POST">
 			<div align="center">
 			    <font size = "7">確認画面</font><br>
 			</div>
 	
-			<font size = "4"><a href="OutBox.php">←戻る</a></font>
+			
  
 			<hr color="green">
 			<br><br>
@@ -47,6 +66,15 @@
 		    <input type="hidden" value="<?= $row['title'] ?>" name="title">
 
 	    </form>
+	    </div>
+	    	
+	    	<div data-role="footer" data-position="fixed">
+				<p>PCP2012</p>
+				
+				<a href="outBox.php" data-role="button" data-icon="back" class="ui-btn-left">戻る</a>
+				<a href="../index.php" data-transition="slide" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
+			</div>
+	</div>
     </body>  
 </html>
         
