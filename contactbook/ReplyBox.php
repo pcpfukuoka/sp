@@ -21,7 +21,7 @@
 	    <link rel="stylesheet" type="text/css" href="../css/button.css" />
 	</head>
 	
-	<body>
+	<body> 
 	<div align="center">
 			<div data-role="header" data-position="fixed">
 				<div data-role="navbar">
