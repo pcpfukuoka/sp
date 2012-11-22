@@ -31,7 +31,7 @@
 	</head>
 	
 	<body>
-	<div data-role="page" id="MailBox" align="center">
+	<div  align="center">
 			<div data-role="header" data-position="fixed">
 				<div data-role="navbar">
 					<ul>
@@ -140,8 +140,8 @@
 	    	
 	    	<div data-role="footer" data-position="fixed">
 				<p>PCP2012</p>
-				<a href="#" data-rel="back" data-role="button" data-icon="back"  class="ui-btn-left">戻る</a>
-				<a href="#contactbook" data-transition="slide" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
+				<a href="main.php" data-role="button" data-icon="back"  class="ui-btn-left">戻る</a>
+				<a href="../index.php" data-transition="slide" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
 			</div>
 	</div>
 	</body>
