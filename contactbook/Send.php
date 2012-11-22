@@ -21,13 +21,35 @@
      
 <html>
 	<head>
+	    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	    <meta name="viewport" content="width=device-width, intital-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	
 	　　<title> 送信</title>
 	  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	  <meta http-equiv="Content-Style-Type" content="text/css">
 	  <link rel="stylesheet" type="text/css" href="../css/button.css" />
+	  
+	  
 	</head>
 	
 	<body>
+	   <div align="center">
+			<div data-role="header" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="">スケジュール</a></li>
+						<li><a href="" class="ui-btn-active">連絡帳</a></li>
+						<li><a href="">授業</a></li>
+						<li><a href="">成績確認</a></li>
+						<li><a href="">アンケート</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div data-role="content">
 		<form action="relay.php" method="POST" id="input">
 		  <div align="center">
 		    <font size = "7">送信</font><br>
@@ -45,9 +67,17 @@
 	      <input type="hidden" value="<?= $contact_book_row['contact_book_seq'] ?>" name="contact_book_seq">
 	      <input type="hidden" value="<?= $contact_book_row['reception_user_seq'] ?>" name="reception_user_seq">
 	      <input type="hidden" value="<?= $contact_book_row['link_contact_book_seq'] ?>" name="link_id">
-	      <input class="button4" type="submit" value="送信" name = "send_update">
-		  <input class="button4" type="submit" value="保存" name="Preservation"><br>
+	      <input class="button4" type="submit"  data-role="button" data-inline="true" value="送信" name = "send_update">
+		  <input class="button4" type="submit"  data-role="button" data-inline="true" value="保存" name="Preservation"><br>
 		  	
-	    </form>     
+	    </form>
+	    </div>
+	    	 
+	    	<div data-role="footer" data-position="fixed" >
+				<p>PCP2012</p>
+				<a href="Draft.php" data-role="button" data-icon="back"  class="ui-btn-left">戻る</a>
+				<a href="../index.php" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
+			</div>
+	</div>     
     </body>
 </html>
