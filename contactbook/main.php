@@ -1,6 +1,11 @@
 <?php
-	//SESSIONでユーザIDの取得
 	session_start();
+	//SESSIONでログイン確認
+	if(!isset($_SESSION["login_flg"]) || $_SESSION['login_flg'] == "false")
+	{
+		header("Location:login/index.php");
+	}
+	//SESSIONでユーザIDの取得
 	$user_seq = $_SESSION['login_info[user]'];
 ?>
 
@@ -21,7 +26,7 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="">スケジュール</a></li>
-						<li><a href="#contactbook">連絡帳</a></li>
+						<li><a href="main.php" class="ui-btn-active">連絡帳</a></li>
 						<li><a href="">授業</a></li>
 						<li><a href="">成績確認</a></li>
 						<li><a href="">アンケート</a></li>
@@ -90,7 +95,9 @@
 			</div>
 
 			<div data-role="footer" data-position="fixed">
+	    		<a href="../index.php" data-role="button" data-icon="back"  class="ui-btn-left">戻る</a>
 				<p>PCP2012</p>
+				<a href="../index.php" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
 			</div>
 		</div>
 	</body>
