@@ -39,7 +39,7 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="">スケジュール</a></li>
-						<li><a href="" class="ui-btn-active">連絡帳</a></li>
+						<li><a href="#main.php" class="ui-btn-active">連絡帳</a></li>
 						<li><a href="">授業</a></li>
 						<li><a href="">成績確認</a></li>
 						<li><a href="">アンケート</a></li>
