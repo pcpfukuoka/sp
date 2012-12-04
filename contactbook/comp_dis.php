@@ -6,10 +6,7 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-		
 		<META HTTP-EQUIV="Refresh" CONTENT="5;URL=OutBox.php">
-		
-		
 		<title>完了画面</title>
 	</head>
 	
@@ -19,7 +16,7 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="">スケジュール</a></li>
-						<li><a href="" class="ui-btn-active">連絡帳</a></li>
+						<li><a href="main.php" class="ui-btn-active">連絡帳</a></li>
 						<li><a href="">授業</a></li>
 						<li><a href="">成績確認</a></li>
 						<li><a href="">アンケート</a></li>
@@ -28,14 +25,14 @@
 			</div>
 			
 			<div data-role="content">
-		<font size = "5">送信を完了しました！！</font>
-		</div>
+				<font size = "5">送信を完了しました！！</font>
+			</div>
 	    	
 	    	<div data-role="footer" data-position="fixed">
+				<a href="main.php" data-role="button" data-icon="back"  class="ui-btn-left">戻る</a>
 				<p>PCP2012</p>
-				<a href="#" data-rel="back" data-role="button" data-icon="back"  class="ui-btn-left">戻る</a>
 				<a href="../index.php" data-transition="slide" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
 			</div>
-	</div>
+		</div>
 	</body>
 </html>
