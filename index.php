@@ -26,7 +26,7 @@
 						<li><a href="http://localhost/sp/contactbook/main.php">連絡帳</a></li>
 						<li><a href="">授業</a></li>
 						<li><a href="">成績確認</a></li>
-						<li><a href="">アンケート</a></li>
+						<li><a href="http://localhost/sp/question/answer_list.php">アンケート</a></li>
 					</ul>
 				</div>
 			</div>
