@@ -11,12 +11,31 @@ $user_seq = $_SESSION['login_info[user]'];
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, intital-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		
 		<META http-equiv="Content-Style-Type" content="text/css">
 		<link rel="stylesheet" type="text/css" href="../css/button.css" />
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
 	</head>
-	<body>		
+	<body>
+	<div align="center">
+			<div data-role="header" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="">スケジュール</a></li>
+						<li><a href="../contactbook/main.php">連絡帳</a></li>
+						<li><a href="">授業</a></li>
+						<li><a href="">成績確認</a></li>
+						<li><a href="answer_list.php" class="ui-btn-active">アンケート</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div data-role="content">			
 		<?php 
 		require_once("../lib/dbconect.php");
 		$dbcon = DbConnect();
@@ -33,7 +52,7 @@ $user_seq = $_SESSION['login_info[user]'];
 		内容：<?= $question_row['question_description'] ?><br>
 		<?php 
 		//質問数を取得してその数ループで回答欄を作成
-		$sql = "SELECT question_details_seq, quesion_details_description,question_division.division_type  FROM question_details  LEFT JOIN question_division ON question_details.quesion_division = question_division.division_seq WHERE question_seq = $question_seq";
+		$sql = "SELECT question_details_seq, quesion_details_description,question_division.division_type  FROM question_details  LEFT JOIN question_division ON question_details.quesion_division = question_division.division_seq WHERE question_seq = $question_seq;";
 		$details_result = mysql_query($sql);
 		$details_cnt = mysql_num_rows($details_result);
 		
@@ -62,7 +81,15 @@ $user_seq = $_SESSION['login_info[user]'];
 		}
 		?>
 		<input class="button4"type="submit" value ="回答を送信">
-		</form>		
+		</form>
+		</div>
+	    	 
+	    	<div data-role="footer" data-position="fixed" >
+				<p>PCP2012</p>
+				<a href="#" data-rel="back" data-role="button" data-icon="back"  class="ui-btn-left">戻る</a>
+				<a href="../index.php" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">トップへ</a>
+			</div>
+	</div>		
 	</body>
 	
 			<script>

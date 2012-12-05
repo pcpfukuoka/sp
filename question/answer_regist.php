@@ -1,9 +1,6 @@
 <?php
 session_start();?>
 <html>
-<head>
-<script src="../javascript/frame_jump.js"></script>
-</head>
 </html>
 <?php
 $user_seq = $_SESSION['login_info[user]'];
@@ -40,8 +37,6 @@ for($i=1;$i<=$details_cnt;$i++)
 		}		
 	}
 }
-	print "<script language=javascript>leftreload();</script>";
-	print "<script language=javascript>jump('comp_dis.html','right');</script>";
 Dbdissconnect($link);
-
+header('Location: comp_dis.html');
 ?>
