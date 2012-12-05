@@ -34,7 +34,7 @@
     	//データベースを閉じる
     	Dbdissconnect($dbcon);
     	
-        Header('Location: comp_dis.html');
+        Header('Location: comp_dis.php');
         exit;
     }
     //一時保存
